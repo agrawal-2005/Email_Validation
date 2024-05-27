@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/936ef4fdd5.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>Signup</header>
+
+        <form action="https://www.tutorialspoint.com/index.htm">
+            <div class="field email-field">
+                <div class="input-field">
+                    <input type="email" placeholder="Enter your Email" class="email" autocomplete="username"/>
+                </div>
+                <span class="error email-error">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <p class="error-text">Please Enter a Valid Email</p>
+                </span>
+            </div>
+
+            <div class="field create-password">
+                <div class="input-field">
+                    <input type="password" placeholder="Create password" class="password" autocomplete="new-password"/>
+                    <i class="fa-solid fa-eye-slash show-hide"></i>
+                </div>
+                <span class="error password-error">
+                    <i class="fa-solid fa-circle-exclamation error-icon"></i>
+                    <p class="error-text">Please enter at least 8 characters with a number, symbol, lowercase and uppercase letter.</p>
+                </span>
+            </div>
+
+            <div class="field confirm-password">
+                <div class="input-field">
+                    <input type="password" placeholder="Confirm password" class="cpassword" autocomplete="new-password"/>
+                    <i class="fa-solid fa-eye-slash show-hide"></i>
+                </div>
+                <span class="error cPassword-error">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <p class="error-text">Passwords don't match</p>
+                </span>
+            </div>
+            <div class="input-field button">
+                <input type="submit" value="Submit Now"/>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
